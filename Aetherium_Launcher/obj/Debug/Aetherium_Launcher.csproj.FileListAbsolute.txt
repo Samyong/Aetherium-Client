@@ -1,0 +1,13 @@
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\bin\Debug\Aetherium_Launcher.exe.config
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\bin\Debug\Aetherium_Launcher.exe
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\bin\Debug\Aetherium_Launcher.pdb
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\MainWindow.baml
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\MainWindow.g.cs
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\App.g.cs
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher_MarkupCompile.cache
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.g.resources
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.Properties.Resources.resources
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.exe
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium_Launcher\Aetherium_Launcher\obj\Debug\Aetherium_Launcher.pdb
