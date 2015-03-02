@@ -12,6 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Web;
+using System.IO;
+using Microsoft.TeamFoundation.WorkItemTracking.ControlsCore;
+using System.Reflection;
+
+
 
 namespace Aetherium_Launcher
 {
@@ -23,6 +29,14 @@ namespace Aetherium_Launcher
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+        public void DisableErrors(WebBrowser wb, bool Hide)
+        {
+            dynamic activeX = wb.GetType().InvokeMember("ActiveXInstance",
+                BindingFlags.GetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                null, wb, new object[] { });
+            activeX.Silent = true;
         }
 
         private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -35,29 +49,44 @@ namespace Aetherium_Launcher
             this.WindowState = WindowState.Minimized;
         }
 
-        private void Label_MouseEnter(object sender, MouseEventArgs e)
+        private void browser_Navigated(object sender, NavigationEventArgs e)
         {
-            if(sender == CloseButton)
+            DisableErrors(browser, true);
+        }
+
+        private void progControl_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            try
             {
-                CloseButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(237, 228, 50));
+                double value = Math.Floor(progControl.Value), dlValue = dlProgressBar.Width, uzValue = unzipProgressBar.Width;
+                if (value <= 100 && dlValue < 669)
+                {
+                    dlProgressBar.Width = Math.Floor(value * 669 / 100);
+                    progress.Text = value.ToString() + "% - Downloading";
+                }
+                if (value > 100 && uzValue <= 341)
+                {
+                    unzipProgressBar.Width = Math.Floor((value - 100) * 341 / 100);
+                    progress.Text = value.ToString() + "% - Extracting";
+                }
             }
-            else if(sender == MinimizeButton)
+            catch
             {
-                MinimizeButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(237, 228, 50));
+
+            }
+
+        }
+
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
             }
         }
 
-        private void Label_MouseLeave(object sender, MouseEventArgs e)
-        {
-            if (sender == CloseButton)
-            {
-                CloseButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(193, 184, 0));
-            }
-            else if (sender == MinimizeButton)
-            {
-                MinimizeButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(193, 184, 0));
-            }
-        }
+
+        //settings rotate animation
 
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\bin\Release\Aetherium_Launcher.exe.config
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\bin\Release\Aetherium_Launcher.exe
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\bin\Release\Aetherium_Launcher.pdb
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\bin\Release\Microsoft.TeamFoundation.WorkItemTracking.Client.DataStoreLoader.dll
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\bin\Release\Microsoft.WITDataStore.dll
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\MainWindow.baml
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\MainWindow.g.cs
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\App.g.cs
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher_MarkupCompile.cache
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher.g.resources
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher.Properties.Resources.resources
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher.exe
+C:\Users\Sam\Documents\Git\Repositories\Aetherium\Aetherium_Client\Aetherium-Client\Aetherium_Launcher\obj\Release\Aetherium_Launcher.pdb
