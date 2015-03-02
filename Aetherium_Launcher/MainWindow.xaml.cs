@@ -25,21 +25,39 @@ namespace Aetherium_Launcher
             InitializeComponent();
         }
 
-        private void Ellipse_MouseEnter(object sender, MouseEventArgs e)
-        {
-            ellipses.Stroke = new SolidColorBrush(Color.FromRgb(90, 90, 90));
-            ellipses.Fill = new SolidColorBrush(Color.FromRgb(90, 90, 90));
-        }
-
-        private void Ellipse_MouseLeave(object sender, MouseEventArgs e)
-        {
-            ellipses.Stroke = new SolidColorBrush(Color.FromRgb(110, 110, 110));
-            ellipses.Fill = new SolidColorBrush(Color.FromRgb(110, 110, 110));
-        }
-
-        private void Ellipse_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void Label_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();
         }
+
+        private void Label_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Label_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if(sender == CloseButton)
+            {
+                CloseButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(237, 228, 50));
+            }
+            else if(sender == MinimizeButton)
+            {
+                MinimizeButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(237, 228, 50));
+            }
+        }
+
+        private void Label_MouseLeave(object sender, MouseEventArgs e)
+        {
+            if (sender == CloseButton)
+            {
+                CloseButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(193, 184, 0));
+            }
+            else if (sender == MinimizeButton)
+            {
+                MinimizeButton.Foreground = new SolidColorBrush(System.Windows.Media.Color.FromRgb(193, 184, 0));
+            }
+        }
+
     }
 }
