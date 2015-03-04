@@ -16,10 +16,14 @@
             <Image HorizontalAlignment="Left" Height="70" Margin="502,524,0,0" VerticalAlignment="Top" Width="509" Source="images/progBG.png"/>
             <Image HorizontalAlignment="Left" Height="70" Margin="0,524,0,0" VerticalAlignment="Top" Width="509" Source="images/progBG.png"/>
             <WebBrowser x:Name="browser" Navigated="browser_Navigated" HorizontalAlignment="Left" Height="526" VerticalAlignment="Top" Width="1366" Source="http://aetherium.us/"/>
+            <Rectangle x:Name="dlProgressBar" HorizontalAlignment="Left" Height="24" Margin="13,557,0,0" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="images/dlProgressBar.png" TileMode="Tile" Stretch="None" AlignmentX="Left" Opacity="0.95"/>
+                </Rectangle.Fill>
+            </Rectangle>
             <Rectangle x:Name="downloadProgBarCont" Fill="#19F7F7F7" HorizontalAlignment="Left" Height="30" Margin="10,554,0,0" Stroke="#4C000000" VerticalAlignment="Top" Width="672"/>
             <Rectangle x:Name="unzipProgBarCont" Fill="#19F7F7F7" HorizontalAlignment="Left" Height="30" Margin="687,554,0,0" Stroke="#4C000000" VerticalAlignment="Top" Width="347"/>
-            <Rectangle x:Name="dlProgressBar" Fill="#9800F3FF" HorizontalAlignment="Left" Height="24" Margin="10,557,0,0" Stroke="#4C000000" VerticalAlignment="Top" Width="0" RenderTransformOrigin="0.5,0.5"/>
-            <Rectangle x:Name="unzipProgressBar" Fill="#98E6FF48" HorizontalAlignment="Left" Height="24" Margin="690,557,0,0" Stroke="#4C000000" VerticalAlignment="Top" Width="0"/>
+            <Rectangle x:Name="unzipProgressBar" Fill="#98E6FF48" HorizontalAlignment="Left" Height="24" Margin="690,557,0,0" Stroke="#4C000000" VerticalAlignment="Top" Width="0" Opacity="0.65"/>
             <TextBlock x:Name="progress" HorizontalAlignment="Left" Margin="567,531,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="197" Foreground="#FF00F3FF"/>
         </Grid>
         <Image Source="images/settingsButton.png"
@@ -42,7 +46,6 @@
                 </EventTrigger>
             </Image.Triggers>
         </Image>
-        <Slider x:Name="progControl" Maximum="200" HorizontalAlignment="Left" Margin="10,691,0,0" VerticalAlignment="Top" Width="1031" ValueChanged="progControl_ValueChanged"/>
         <TextBlock x:Name="CloseButton" MouseLeftButtonDown="Label_MouseLeftButtonDown" HorizontalAlignment="Left" Margin="1345,-3,0,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top" Foreground="#FF939393" FontFamily="Arial" FontSize="24" Height="31" Width="21" ToolTip="Exit" Cursor="Hand"/>
         <TextBlock x:Name="MinimizeButton" MouseLeftButtonDown="Label_MouseLeftButtonDown_1" HorizontalAlignment="Left" Margin="1325,-7,0,0" TextWrapping="Wrap" Text="_" VerticalAlignment="Top" Foreground="#FF939393" FontFamily="Arial" FontSize="24" Height="35" Cursor="Hand" ToolTip="Minimize"/>
     </Grid>
